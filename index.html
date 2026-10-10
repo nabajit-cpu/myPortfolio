@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nabajit Boro — Software Development Engineer. Paytm Hotels, ex-Jio. Backend, Go, Kafka, Spring Boot." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>Nabajit Boro · SDE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+  <div class="orb orb-c" aria-hidden="true"></div>
+  <nav class="nav">
+    <a class="logo" href="#top">Nabajit Boro</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <p class="hero-eyebrow reveal">
+        <span class="pulse-dot"></span>
+        Available for impactful engineering roles
+      </p>
+      <h1 class="hero-title reveal">
+        <span class="line">Nabajit</span>
+        <span class="line gradient-text">Boro</span>
+      </h1>
+      <p class="hero-sub reveal">
+        I build <strong>event-driven platforms</strong> at scale — hotel booking at Paytm,
+        real-time systems at Jio. Java · Go · Kafka · Spring Boot.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#work">See my work</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/nabajit-boro/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/nabajit-cpu" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://leetcode.com/u/nabajitboro7/" target="_blank" rel="noopener">LeetCode</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="1000">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">DSA problems</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Yrs industry</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="14">0</span>
+          <span class="stat-label">Microservices touched</span>
+        </div>
+      </div>
+    </header>
+
+    <section id="work" class="section">
+      <div class="section-head reveal">
+        <h2>Experience</h2>
+        <p>Shipping production systems — sync pipelines to booking funnels.</p>
+      </div>
+
+      <article class="card job reveal">
+        <div class="job-meta">
+          <span class="badge badge-live">Current</span>
+          <time>Jun 2025 — Present</time>
+        </div>
+        <h3>Software Development Engineer · Paytm</h3>
+        <p class="job-loc">Bengaluru · Paytm Travel — Hotels Platform</p>
+        <ul>
+          <li>Supplier <strong>data sync</strong> in Go: mappings &amp; content ingestion, MySQL job state, Kafka pipelines into CMS.</li>
+          <li><strong>Hotel CMS</strong>: canonical IDs, MongoDB raw/curated content, lifecycle events for search &amp; recommendation.</li>
+          <li><strong>Booking funnel</strong>: search, availability, room rates, cart/review across Spring Boot microservices, Redis, BFF + Next.js.</li>
+          <li>Feature-flag rollouts, observability, docker-compose integration testing across services.</li>
+        </ul>
+        <div class="tags">
+          <span>Go</span><span>Kafka</span><span>Spring Boot</span><span>MongoDB</span><span>MySQL</span><span>Redis</span>
+        </div>
+      </article>
+
+      <article class="card job reveal">
+        <div class="job-meta">
+          <time>Jun 2023 — May 2025</time>
+        </div>
+        <h3>Software Development Engineer · Jio Platforms</h3>
+        <p class="job-loc">Bengaluru</p>
+        <div class="job-split">
+          <div>
+            <h4>JioTalkie</h4>
+            <ul>
+              <li>Real-time <strong>SOS</strong> event processing &amp; targeted pub/sub under concurrent load.</li>
+              <li>WebSocket reconnect, heartbeats, caching for alerts &amp; location on weak networks.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Jio Crash Reporter</h4>
+            <ul>
+              <li>Spring Boot APIs ingesting crash &amp; diagnostic data from millions of <strong>JioPhone</strong> devices.</li>
+              <li>Automation for recurring failure detection &amp; faster RCA.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags">
+          <span>Spring Boot</span><span>WebSocket</span><span>REST</span><span>Real-time</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <h2>Skills</h2>
+        <p>Concepts and strengths I apply in production.</p>
+      </div>
+      <div class="skills-grid reveal">
+        <span class="skill-chip">Data structures &amp; algorithms</span>
+        <span class="skill-chip">System design</span>
+        <span class="skill-chip">Microservices architecture</span>
+        <span class="skill-chip">Event-driven systems</span>
+        <span class="skill-chip">Distributed systems</span>
+        <span class="skill-chip">REST API design</span>
+        <span class="skill-chip">OOP &amp; clean code</span>
+        <span class="skill-chip">Real-time / WebSocket systems</span>
+        <span class="skill-chip">Observability &amp; debugging</span>
+        <span class="skill-chip">DBMS &amp; caching patterns</span>
+      </div>
+    </section>
+
+    <section id="stack" class="section">
+      <div class="section-head reveal">
+        <h2>Stack</h2>
+        <p>Languages, frameworks, and tools I work with.</p>
+      </div>
+      <div class="bento reveal">
+        <div class="bento-item bento-wide">
+          <span class="bento-label">Languages</span>
+          <p>Java 21 · Go · JavaScript · C · C++</p>
+        </div>
+        <div class="bento-item">
+          <span class="bento-label">Backend</span>
+          <p>Spring Boot · Apache Kafka · Node.js</p>
+        </div>
+        <div class="bento-item">
+          <span class="bento-label">Frontend</span>
+          <p>React · Next.js</p>
+        </div>
+        <div class="bento-item">
+          <span class="bento-label">Databases</span>
+          <p>MySQL · MongoDB · Redis · PostgreSQL</p>
+        </div>
+        <div class="bento-item bento-wide">
+          <span class="bento-label">DevOps &amp; platform</span>
+          <p>Docker · Kubernetes · Git · REST · Feature flags</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-compact reveal">
+      <div class="edu-card card">
+        <div>
+          <h3>IIIT Allahabad</h3>
+          <p>B.Tech · Electronics &amp; Communication Engineering</p>
+        </div>
+        <time>2019 — 2023</time>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <h2>Projects</h2>
+        <p>Hardware meets algorithms.</p>
+      </div>
+      <article class="card project reveal">
+        <div class="project-icon">◈</div>
+        <h3>2×2 Rubik's Cube — Mechanical Solver</h3>
+        <p>Bidirectional BFS in C++ for optimal move count; Arduino dual-arm execution of the solution path.</p>
+        <div class="tags"><span>C++</span><span>BFS</span><span>Arduino</span></div>
+      </article>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-inner">
+        <h2 class="gradient-text">Build something bold?</h2>
+        <p>Open to SDE roles — backend, platform, distributed systems.</p>
+        <div class="contact-links">
+          <a class="email-link" href="mailto:nabajitboro796@gmail.com?subject=Hello%20Nabajit">nabajitboro796@gmail.com</a>
+          <a href="tel:+918431619640">+91 8431619640</a>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary email-link" href="mailto:nabajitboro796@gmail.com?subject=Hello%20Nabajit">Email me</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/nabajit-boro/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Nabajit Boro</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
