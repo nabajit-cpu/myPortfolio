@@ -22,6 +22,8 @@
       <a href="#work">Work</a>
       <a href="#skills">Skills</a>
       <a href="#stack">Stack</a>
+      <a href="#case-study">Case study</a>
+      <a href="#github">GitHub</a>
       <a href="#projects">Projects</a>
       <a href="#contact" class="nav-cta">Let's talk</a>
     </div>
@@ -39,11 +41,12 @@
         <span class="line gradient-text">Boro</span>
       </h1>
       <p class="hero-sub reveal">
-        I build <strong>event-driven platforms</strong> at scale — hotel booking at Paytm,
+        I build <strong>software platforms</strong> at scale — hotel booking at Paytm,
         real-time systems at Jio. Java · Go · Kafka · Spring Boot.
       </p>
       <div class="hero-actions reveal">
         <a class="btn btn-primary" href="#work">See my work</a>
+        <a class="btn btn-ghost resume-download" href="assets/Nabajit_Boro_Resume.pdf" download="Nabajit_Boro_Resume.pdf">Download resume</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/nabajit-boro/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn btn-ghost" href="https://github.com/nabajit-cpu" target="_blank" rel="noopener">GitHub</a>
         <a class="btn btn-ghost" href="https://leetcode.com/u/nabajitboro7/" target="_blank" rel="noopener">LeetCode</a>
@@ -116,6 +119,32 @@
       </article>
     </section>
 
+    <section id="case-study" class="section">
+      <div class="section-head reveal">
+        <h2>Case study</h2>
+        <p>Supplier sync → CMS → booking funnel (Paytm Hotels).</p>
+      </div>
+      <article class="card case-study reveal">
+        <h3>Hotel content &amp; mappings pipeline</h3>
+        <p class="case-lead">
+          Incremental supplier sync, event-driven ingest, and a multi-service booking path —
+          built for safe rollouts and clear ownership between teams.
+        </p>
+        <details class="case-details">
+          <summary>Read the flow</summary>
+          <ol class="case-flow">
+            <li><strong>Sync (Go)</strong> — Scheduled and on-demand jobs discover new, updated, and removed hotel mappings; MySQL tracks locks, cursors, and run state; Kafka carries fetch work and per-hotel payloads.</li>
+            <li><strong>CMS (Java)</strong> — Phase A ingests provider data, resolves canonical hotel IDs, stores split raw content in MongoDB; Phase B merges supplier views, fills curated gaps, emits lifecycle updates for search and recommendation.</li>
+            <li><strong>Booking funnel</strong> — BFF-facing APIs over search, availability, room rates, and cart/review; Spring Boot services, Redis caching, supplier integrations behind gateway adapters.</li>
+          </ol>
+          <p class="case-note">Takeaway: idempotent consumers, feature flags, and publish-before-persist ordering keep downstream systems consistent under incremental sync.</p>
+        </details>
+        <div class="tags">
+          <span>Go</span><span>Kafka</span><span>Spring Boot</span><span>MongoDB</span><span>MySQL</span>
+        </div>
+      </article>
+    </section>
+
     <section id="skills" class="section">
       <div class="section-head reveal">
         <h2>Skills</h2>
@@ -174,6 +203,16 @@
       </div>
     </section>
 
+    <section id="github" class="section">
+      <div class="section-head reveal">
+        <h2>GitHub</h2>
+        <p>Recent public repos from <a href="https://github.com/nabajit-cpu" target="_blank" rel="noopener">@nabajit-cpu</a>.</p>
+      </div>
+      <div id="githubRepos" class="repo-grid reveal" aria-live="polite">
+        <p class="repo-loading">Loading repositories…</p>
+      </div>
+    </section>
+
     <section id="projects" class="section">
       <div class="section-head reveal">
         <h2>Projects</h2>
@@ -197,6 +236,7 @@
         </div>
         <div class="hero-actions">
           <a class="btn btn-primary email-link" href="mailto:nabajitboro796@gmail.com?subject=Hello%20Nabajit">Email me</a>
+          <a class="btn btn-ghost resume-download" href="assets/Nabajit_Boro_Resume.pdf" download="Nabajit_Boro_Resume.pdf">Download resume</a>
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/nabajit-boro/" target="_blank" rel="noopener">Connect on LinkedIn</a>
         </div>
       </div>
