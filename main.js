@@ -92,3 +92,20 @@ const statsObs = new IntersectionObserver(
 
 const statsBlock = document.querySelector(".hero-stats");
 if (statsBlock) statsObs.observe(statsBlock);
+
+const RESUME_PATH = "assets/Nabajit_Boro_Resume.pdf";
+
+async function checkResumeAvailable() {
+  try {
+    const res = await fetch(RESUME_PATH, { method: "HEAD" });
+    if (!res.ok) {
+      document.querySelectorAll(".resume-download").forEach((el) => {
+        el.classList.add("missing");
+        el.title = "Add assets/Nabajit_Boro_Resume.pdf and redeploy";
+      });
+    }
+  } catch {
+    /* offline or file:// — leave buttons enabled */
+  }
+}
+checkResumeAvailable();

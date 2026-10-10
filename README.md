@@ -1,50 +1,68 @@
 # Nabajit Boro — Portfolio
 
-Static single-page portfolio (no build step). Content aligned with your resume: Paytm Hotels, Jio, stack, Rubik project.
+Static site: **no build step**. Live on Netlify, source on GitHub.
+
+## Where to keep this portfolio (cheat sheet)
+
+| What | Where |
+|------|--------|
+| **Source code (edit here)** | `~/portfolio` on your Mac |
+| **Git backup** | [github.com/nabajit-cpu/myPortfolio](https://github.com/nabajit-cpu/myPortfolio) |
+| **Live website** | Your Netlify URL (e.g. `https://your-name.netlify.app`) |
+| **Resume PDF** | `~/portfolio/assets/Nabajit_Boro_Resume.pdf` → commit → push |
+| **Put link on resume** | Header line: `Portfolio: https://your-netlify-url.app` |
+| **LinkedIn** | Featured → Add link → title “Portfolio” |
+| **Cold email** | One line: `Portfolio: <url>` (optional; you already have email tool) |
+| **Job portals** | Naukri / Instahyre “Website” field → same Netlify URL |
+
+You do **not** need another folder — `~/portfolio` + GitHub + Netlify is enough.
+
+## Optional features (on the site)
+
+1. **Download resume** — Add `assets/Nabajit_Boro_Resume.pdf` (see `assets/PUT_RESUME_HERE.txt`). Button dims until the file exists.
+2. **Case study** — Paytm hotels sync → CMS → booking (expandable on the page).
+3. **Custom domain** — Netlify → Site configuration → Domain management → Add domain (e.g. `nabajitboro.com`) → follow DNS steps.
 
 ## Preview locally
 
 ```bash
 cd ~/portfolio
 python3 -m http.server 5173
-# open http://localhost:5173
+# http://localhost:5173
 ```
 
-Or:
+## Deploy / update (Netlify + Git)
 
 ```bash
-npx serve .
+cd ~/portfolio
+git add .
+git commit -m "Update portfolio"
+git push origin main
 ```
 
-## Deploy
+Netlify redeploys `main` automatically.
 
-### Vercel
+### First-time Netlify
 
-1. Push this folder to GitHub (e.g. `nabajit-cpu/portfolio`).
-2. [vercel.com](https://vercel.com) → Import repo → Framework: **Other** → Output: root.
-3. Deploy.
-
-### Netlify
-
-Drag the `portfolio` folder to [app.netlify.com/drop](https://app.netlify.com/drop), or connect Git with publish directory `.`.
-
-### GitHub Pages
-
-1. Repo → Settings → Pages → Source: **main** branch, folder **/ (root)**.
-2. Site: `https://<username>.github.io/<repo>/`
+1. [app.netlify.com](https://app.netlify.com) → Import **nabajit-cpu/myPortfolio**
+2. Build command: **empty** · Publish directory: **`.`**
+3. Deploy → copy the `*.netlify.app` URL into resume & LinkedIn
 
 ## Customize
 
-- Copy & links: `index.html` (contact section, meta description).
-- Colors & motion: `styles.css` (`:root` variables).
-- Animations: `main.js`.
+| File | Change |
+|------|--------|
+| `index.html` | Copy, experience bullets, case study |
+| `styles.css` | Colors (`:root`) |
+| `main.js` | Email helper, resume availability check |
+| `assets/Nabajit_Boro_Resume.pdf` | Your PDF resume |
 
 ## Files
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Structure & content |
-| `styles.css` | Dark gradient / bento / glass UI |
-| `main.js` | Scroll reveal, stat counters, cursor glow |
-# myPortfolio
-# myPortfolio
+| `index.html` | Page content & sections |
+| `styles.css` | Layout & theme |
+| `main.js` | Email helper, GitHub repos, resume check |
+| `netlify.toml` | Publish root for Netlify |
+| `assets/` | Resume PDF lives here |

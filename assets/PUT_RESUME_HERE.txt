@@ -1,0 +1,9 @@
+Drop your resume PDF in this folder and name it exactly:
+
+  Nabajit_Boro_Resume.pdf
+
+The site "Download resume" button points to:
+  /assets/Nabajit_Boro_Resume.pdf
+
+After adding the file:
+  cd ~/portfolio && git add assets/Nabajit_Boro_Resume.pdf && git commit -m "Add resume PDF" && git push
